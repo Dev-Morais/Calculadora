@@ -1,0 +1,109 @@
+/*layout Geral da calculadora*/
+body {
+   background: linear-gradient(135deg, #1e1e2f, #3a3a55 ); 
+   font-size: 'poppins', sans-serif;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   color: #fff;
+}
+
+/*Container Principal (main)*/
+.calculator {
+   background: #2b2b3d;
+   padding: 20px;
+   border-radius: 20px;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+   width: 320px;
+}
+
+/* Titulo */
+.calculator {
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #00e6a0;
+}
+/*Display*/
+
+.display input {
+    width: 100%;
+    height: 50px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: right;
+    padding-right: 10px;
+    background: #1a1a25;
+    color: #00ffb3;
+    margin-bottom: 15px;
+}
+/* Botões */
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 55px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #44444a;
+    color: #fff;
+}
+button:hover {
+    background: #00e6a0;
+    color: #000;
+}
+
+.operator {
+    background: #ff9f1a;
+}
+
+.equal {
+   background: #00e6a0;
+   color: #000; 
+   font-weight: bold;
+}
+
+#clear {
+    grid-column: span 4;
+    background: #ff4d4d;
+    font-weight: bold;
+}
+
+/*history */
+
+.history {
+    margin-top: 20px;
+    background: #1a1a25;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.history h2 {
+    font-size: 1rem;
+    color: #00e6a0;
+    margin-bottom: 10px;
+}
+
+#historylist {
+   list-style: none;
+   max-height: 150px;
+   overflow-y: auto;
+   padding: 0;
+}
+#historylist li {
+    background-color: #2b2b3d;
+    padding: 5px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
