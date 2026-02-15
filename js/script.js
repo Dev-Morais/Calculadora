@@ -15,7 +15,7 @@ console.log("sistema iniciado. Aguardando entrada do usuário!");
 //--------------------------------------------------------------
 
 for (var i = 0; i < buttons.length; i++);{
-    buttons[i]. addEventListener('click', function(){
+    buttons[i].addEventListener('click', function(){
         //"this" se refere ao botão clicado
         var value = this.textContent;
         console.log("Botão clicado:", value);
